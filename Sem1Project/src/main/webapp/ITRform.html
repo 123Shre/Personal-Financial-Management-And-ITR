@@ -1,0 +1,299 @@
+<body>
+	<section>
+		<div class="con1">
+
+			<center>
+				<h1 id="title">ITR Form</h1>
+			</center>
+
+			<form id="survey-form" action="Itr.jsp" method="post" enctype="multipart/form-data">
+				<div class="card-header d-flex align-items-center">
+					<center>
+						<h3 class="h4">PART A GENERAL INFORMATION</h3>
+					</center>
+				</div>
+
+				<div class="box1">
+					<label for="email" class="label" id="email-label">E-mail</label> <input
+						type="email" id="email" name="email" class="text"
+						placeholder="Enter your e-mail" required>
+				</div>
+				<br>
+				<div class="box1">
+					<label for="number" class="label1" id="number-label">Age</label> <input
+						type="number" id="number" name="age" class="text" min="0"
+						max="200" placeholder="Enter your age">
+				</div>
+				<br>
+				<h2>GENDER</h2>
+				<div class="box" id="radio-section">
+					<label><input type="radio" id="maybe" name="gender"
+						value="male">Male</label> <label><input type="radio"
+						id="not-sure" name="gender" value="female">Female</label> <label><input
+						type="radio" id="other" name="gender" value="other">Other</label>
+				</div>
+				<br>
+				<div class="box1">
+					<label for="number" class="label1" id="number-label">Permanent
+						Account number</label> <input type="text" id="number" class="text"
+						name="PAN" min="0" max="500000" placeholder="Enter account number">
+				</div>
+				<br>
+				<div class="box1">
+					<label for="number" class="label1" id="number-label">Date
+						Of Birth</label> <input type="date" id="birthday" name="DOB" class="text"
+						min="0" max="200" placeholder="Enter your age">
+				</div>
+				<br>
+				<div class="box1">
+					<label for="text" class="label1" id="number-label">Permanent
+						Address</label> <input type="text" id="text" class="text" name="addr"
+						min="0" max="5000" placeholder="Enter address">
+				</div>
+				<br>
+				<div class="box1">
+					<label for="number" class="label1" id="number-label">Aadhaar
+						Number(12 digit)</label> <input type="number" id="number" class="text"
+						name="Aadhaar" 
+						placeholder="Enter aadhar number">
+				</div>
+				<br>
+				<h2>Status</h2>
+				<div class="box1" id="radio-section">
+					<label><input type="radio" id="maybe" name="Status"
+						value="Individual">Individual</label> <label><input
+						type="radio" id="not-sure" name="Status" value="HUF">HUF</label> <label><input
+						type="radio" id="not-sure" name="Status" value="Firm">Firm</label>
+
+				</div>
+				<br>
+				<div class="card-header d-flex align-items-center">
+					<h3 style="text-align:center;"class="h4">PART B GROSS TOTAL INCOME</h3>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="col-sm-2 form-control-label">Income from
+						salary/business</label>
+					<div class="col-sm-6">
+						<input type="text" id="profile-aadharNo" placeholder="Income"
+							name="Income" maxlength="28" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="col-sm-2 form-control-label">Passport Photo</label>
+					<div class="col1" id="passportPhotoDiv">
+						<input type="file" id="passPhoto" name="Photo">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="col-sm-2 form-control-label">Signature</label>
+					<div class="col1" id="signatureDiv">
+						<input type="file" id="sign" name="Sign">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="control1">Form 16</label>
+					<div class="col1" id="FORM16">
+						<input type="file" id="FORM16" name="Form16">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="control1">Interest Certificate From Bank And
+						Post Office</label>
+					<div class="col1" id="CER">
+						<input type="file" id="CER" name="InterestCert">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="control1">Tax Saving Investment Proof</label>
+					<div class="col1" id="competMarksheetDiv">
+						<input type="file" id="competMarksheet" name="TaxSvInPr">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="control1">Life Insurance Premium Paid</label>
+					<div class="col1" id="admitCardDiv">
+						<input type="file" id="admitCard" name="LifeInsPP">
+					</div>
+				</div>
+				<br>
+				<div class="row1">
+					<label class="control1">Salary Slip</label>
+					<div class="col1" id="incomeCertDiv">
+						<input type="file" id="incomeCert" name="SalSlp">
+					</div>
+					<br>
+					<div class="row1">
+						<label class="control1">HOME LOAN STATEMENT FROM BANK</label>
+						<div class="col1" id="ecActDiv">
+							<input type="file" id="ecAct" multiple="multiple" name="HomeLoSB">
+						</div>
+					</div>
+					<br>
+				</div>
+		</div>
+		
+		<input type="submit" id="submit" value="Submit" class="submit">
+		</form>
+
+		</div>
+
+	</section>
+	<style>
+:root { --accent-color: rgb(102, 57, 139);
+}
+
+/*=============== BASE ===============*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+}
+
+body {
+	padding: 50px;
+	background-image:
+		url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+	background-size: cover;
+	background-color: #29203f;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#description {
+	text-align: center;
+	opacity: 80%;
+}
+
+h2, .title-label {
+	font-weight: bold;
+}
+
+label {
+	display: flex;
+	align-items: center;
+}
+
+.con1 {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.068);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.048);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
+	padding: 50px;
+}
+
+.input-box {
+	position: relative;
+	margin: 10px 0;
+	padding-bottom: 20px;
+}
+
+.input-text {
+	width: 100%; height : 2.375rem;
+	padding: 0.375rem 0.75rem;
+	margin-top: 0.5rem;
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.068);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: none;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.068);
+	height: 2.375rem;
+}
+
+select option {
+	color: var(- -accent-color);
+}
+
+#radio-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 450px;
+}
+
+#radio-section input {
+	margin-right: 10px;
+}
+
+#checkbox-section {
+	column-count: 2;
+	column-gap: 20px;
+}
+
+.input-checkbox {
+	padding: 5px 10px;
+}
+
+input {
+	margin-right: 10px;
+	color: blue; min-height : 1rem;
+	min-width: 1rem;
+	min-height: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+	opacity: 0.5;
+	color: #fff;
+}
+
+#comment {
+	height: 5rem;
+	min-height: 2.5rem;
+}
+
+/*=============== BUTTON ===============*/
+#submit {
+	width: 100%;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.068);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.048);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.192);
+	transition-duration: 0.5s;
+}
+
+#submit1:hover {
+	background: rgba(255, 255, 255, 0.26);
+	transition-duration: 0.5s;
+}
+
+/*=============== MEDIA QUERY ===============*/
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	body {
+		padding: 20px;
+	}
+	.container {
+		padding: 20px;
+	}
+	#checkbox-section {
+		column-count: 1;
+		column-gap: 0px;
+	}
+}
+</style>
+</body>
+
+
+
+
